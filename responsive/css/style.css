@@ -1,0 +1,252 @@
+﻿@charset "utf-8";
+body,header,img,section,footer,h1,h2,h3,h4,p,ul,ol,li,a,label,input,button,figure,div,em,strong,span,hgroup,p{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,ol{list-style: outside none none;}
+body{font-family:"Microsoft Yahei";background:#f5f5f5;}
+.none{display:none;}
+img{display:block;max-width: 100%;}
+div,figure,figcaption,input,button{box-sizing:border-box;}
+.clearFix:after{content:".";display:block;height:0;visibility:hidden;clear: both;}
+
+
+#header{width:100%;height:70px;background:#333;box-shadow:0px 1px 10px rgba(0,0,0,0.6);position: fixed;top:0;z-index: 9999;}
+#header div{max-width:1263px;height:70px;margin:0 auto;}
+#header div h1{float:left;width:30%;height:70px;background:url(../img/logo.png) no-repeat left center;text-indent:-99em;overflow: hidden;}
+#header .navs{width:50%;float:right;height:70px;line-height:70px;text-align:center;}
+#header .navs li{float: left;width:20%;}
+#header .navs li a{display:block;height:70px;color:#eee;}
+#header .navs li a:hover,#header .navs .curr a{background:#000;}
+
+
+#adver{max-width:1920px;margin: 0 auto;padding-top:70px;position:relative;}
+
+#adver .searBox{width:40%;height:60px;background:#000;opacity:0.6;border-radius:10px;position: absolute;top:50%;left:50%;margin:-10px 0px 0px -20%;}
+#adver .copy{opacity:1;background:transparent;}
+#adver form:after{content:".";display:block;height:0;visibility:hidden;clear: both;}
+#adver form{padding:4px;}
+#adver .search{width:70%;float:left;height:52px;border-radius:10px;background:#eee;outline: none;border:0 none;text-indent:1em;font-size: 24px;color:#666;border:1px solid #666;}
+#adver button{width:30%;float:right;height:52px;border-radius:10px;background:#eee;outline: none;border:0 none;cursor:pointer;font-weight:bold;font-size: 24px;color:#666;border:1px solid #666;border-left:3px solid #333}
+
+
+
+#tour{max-width:1263px;margin:30px auto;/*background:#eee;*/}
+#tour .tour{text-align: center;color:#666;}
+#tour .tour h2{font-size: 45px;letter-spacing:2px;margin:10px 0px;}
+#tour .tour p{margin:10px 10px;font-size:16px;}
+#tour figure{border:1px solid #ddd;display:block;float: left;border-radius:4px;padding:4px;width:32.5%;font-size:14px;position: relative;margin:15px 0.4%;}
+#tour figure img{vertical-align:middle;width:100%;height:230px;}
+#tour figcaption{color:#777;padding:7px 0px 5px;letter-spacing:1px;line-height:1.5;}
+#tour .figcapTit{height:40px;overflow: hidden;}
+#tour figcaption .title{font-weight:normal;color:#333;}
+#tour .info{margin-top:5px;overflow:hidden;}
+#tour .sat{float:right;font-style: normal;color:#999;font-size:13px;position: relative;right:5px;top:5px;}
+#tour .price{float:left;color:#f60;}
+#tour .price strong{font-size:20px;letter-spacing:1px;}
+#tour .type{position:absolute;top:4px;left:4px;width:90px;height:25px;background:#59b200;text-align:center;color:#fff;line-height:25px;letter-spacing:1px;border-bottom-right-radius:4px;}
+
+
+#footer{background:#222;clear:both;}
+#footer .top{max-width: 1263px;height:280px;margin:0px auto;text-align:center;}
+#footer .top .block{width:33.33%;height:280px;float:left;vertical-align:top;color:#ccc;text-align:left;}
+#footer .top h2{font-size:24px;padding:20px 0px 0px 20px;font-weight:normal;}
+#footer .top hr{border:1px dashed #333;width:91%;}
+#footer .top ul{text-indent:20px;font-size: 16px;line-height:2;}
+#footer .top ul a{color:#666;}
+#footer .bottom{border-top:1px solid #444;background:#000;padding:20px 0;text-align:center;color:#777;}
+#footer .version{display:none;text-align: center;color:#777;padding:10px 0;}
+
+
+/*子栏目页*/
+#headLine{max-width:1920px;padding-top:70px;margin:0 auto;position: relative;}
+#headLine hgroup{position: absolute;top:45%;left:18%;color:#eee;} 
+#headLine hgroup h2{font-size: 36px;}
+#headLine hgroup h3{font-size: 20px;}
+
+#container{max-width:1263px;margin:30px auto;overflow: hidden;}
+#container .sideBar{float: right;width:26.2%;}
+#container .sideBox{border:1px solid #eee;margin:0px 0px 10px 0px;text-align:center;background:#fff;}
+#container .sideBox h3{font-size:20px;font-weight:normal;background:#fafafa;text-indent:10px;height:40px;line-height:40px;text-align:left;color:#666;}
+#container .sideBox .tag{padding:10px 0px;}
+#container .sideBox .tag li{display:inline-block;background:#eee;margin:2px 0px;width:100px;height:35px;text-align:left;text-indent: 8px;line-height:35px;}
+#container .sideBox .tag li a{display:block;color:#999;}
+#container .sideBox .tag a:hover{background:#458b00;color:#fff;}
+#container .box,#container .figure{padding:10px 0px;}
+#container .figure figure{display:inline-block;padding:4px 0;color:#666;background:#fff;}
+#container .box a{display:inline-block;height:40px;line-height:40px;width:150px;color:#999;margin:2px 0;text-indent:35px;text-align:left;}
+#container .box .trea1{background:#eee url(../img/trea1.png) no-repeat 10px center;}
+#container .box .trea2{background:#eee url(../img/trea2.png) no-repeat 10px center;}
+#container .box .trea3{background:#eee url(../img/trea3.png) no-repeat 10px center;}
+#container .box .trea4{background:#eee url(../img/trea4.png) no-repeat 10px center;}
+#container .list{float: left;width:72.8%;overflow:hidden;color:#666;font-size:20px;}
+#container .list h3{height:40px;line-height:40px;font-size:30px;font-weight: normal;border-bottom:1px dashed #999;padding-bottom:15px;}
+/*关于我们*/
+#container .about p{line-height:2;margin:20px 0px;}
+#container .about address{font-style:normal;line-height: 1.6;margin:20px 0px;font-size: 20px;}
+
+/*风景欣赏*/
+.scenery figure{display: block;padding:4px;border:1px solid #ddd;border-radius:4px;margin:15px 5px 15px 0px;float:left;width:32.6%;}
+.scenery figcaption{text-align:center;padding:5px 0px;}
+#container .list.information .more,#container .list.scenery .more{width:200px;height:50px;line-height:50px;border:1px solid #ccc;border-radius:10px;font-size: 18px;margin:0px auto;text-align: center;cursor: pointer;background:#fafafa;}
+
+
+/*机票预定*/
+#container .ticket .type{margin:20px 0px 10px 0px;}
+#container .ticket mark{color:#fff;background:#458b00;padding:5px 8px;margin:0px 10px 0px 16px;border-radius:4px;}
+#container .ticket .form{display:inline-block;font-size:20px;width:43%;}
+#container .ticket .form p{line-height:3;}
+#container .ticket .form input{width:250px;height:30px;margin:0px 0px  0px 14px;padding:5px;font-size:18px;border:1px solid #ccc;color:#666;border-radius:4px;}
+#container .ticket .button{display:inline-block;width:9%;vertical-align: top;}
+#container .ticket .button .submit{font-size:18px;width:90px;height:90px;display:block;line-height:90px;background:#f60;color:#fff;border-radius:4px;text-align: center;border:0 none;position:relative;top:10px;cursor: pointer;}
+
+#container .ticket .new{margin-top:20px;}
+#container .ticket .new ul{overflow: hidden;margin-top:20px;}
+#container .ticket .new li{float:left;}
+#container .ticket .new li:first-child{padding:5px 10px 5px 0px;}
+#container .ticket .new li a{display: block;padding:5px 10px;color:#666;}
+#container .ticket .new li.curr a,#container .ticket .new ul a:hover{background:#458b00;color:#fff;border-radius:4px;}
+
+#container .ticket table{border-collapse: collapse;width:100%;text-align:center;margin-top:20px;}
+#container .ticket th{height: 50px;line-height:50px;border-bottom: 1px solid #ddd;}
+#container .ticket td{height: 50px;line-height:50px;border-bottom: 1px solid #ddd;}
+#container .ticket tr:nth-child(2n){background:#fafafa;}
+#container .ticket tr:hover{background:#eee;}
+#container .ticket table .price{ color:#f60;}
+#container .ticket table .more{color:#666;}
+#container .ticket table .reserve a{display: inline-block;width:80px;height:35px;line-height:35px;background:#f60;color:#fff;border-radius:4px;font-size:20px;}
+
+
+/*旅游资讯*/
+#container .tour{overflow:hidden;margin:0px 0px 20px 0px;border:1px solid #eee;position: relative;background:#fff;}
+#container .touTit{margin:0 0 20px 0;}
+#container .tour img{float:left;width:45%;}
+#container .tour figcaption{float: right;color:#666;width:55%;}
+#container .tour hgroup{width:300px;padding:10px 0px 10px 25px;}
+#container .tour hgroup h3{font-size:24px;color:#333;font-weight:normal;border:0 none;padding:0;}
+#container .tour hgroup h4{font-size:16px;font-weight:normal;padding-top:10px;line-height: 1.5;}
+#container .tour  ol{line-height: 2;padding-left:25px;}
+#container .tour  ol mark{border:1px solid #458b00;background:#fff;color:#458b00;padding:0px 5px;border-radius:4px;margin-right:2px;}
+#container .buy{position: absolute;top:55px;right:0px;}
+#container .buy .price{color:#f60;font-size:20px;}
+#container .buy .price strong{font-size:36px;}
+#container .buy .price s{color:#999;font-size:16px;}
+#container .buy .reserve{margin-top:10px;}
+#container .buy .reserve a{display: block;width:152px;height:40px;line-height:40px;background:#f60;color:#fff;border-radius:4px;text-align: center;}
+#container .information .type{position:absolute;top:0px;left:0px;width:90px;height:25px;background:#59b200;text-align:center;color:#fff;line-height:25px;letter-spacing:1px;border-bottom-right-radius:4px;font-size: 14px;}
+#container .disc{position: absolute;top:0px;right:0px;background:url(../img/disc.png) center no-repeat;width:52px;height:52px;}
+#container .disc span{transform:rotate(45deg);display:block;text-indent: 7px;font-size: 14px;color:#ff7a4d;margin:5px 0px 0px 11px;text-align:center;}
+#container .tour footer{background:#fafafa;width:55%;height:35px;line-height:35px;text-indent:25px;position: absolute;right:0px;bottom:0px;}
+#container .tour footer time{color:#458b00;}
+
+@media (min-width: 1501px) and (max-width: 1750px) {
+	#headLine hgroup{left:13%;}
+}
+/*当页面大于 1200px 时，大屏幕，主要是 PC 端*/
+@media (min-width: 1200px) and (max-width: 1500px){
+	#headLine hgroup{left:6%;}
+}
+/*在 992 和 1199 像素之间的屏幕里，中等屏幕，分辨率低的 PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#adver .searBox{width:50%;margin:10px 0 0 -25%;}
+	#tour .tour h2{font-size:40px;}
+	#headLine hgroup{left:5%;}
+	#container .sideBar{display: none;}
+	#container .list{width:99%;padding:0 20px;}
+}
+/*在 768 和 991 像素之间的屏幕里，小屏幕，主要是 PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#header div .navs{width:65%;}
+	#adver .searBox{width:60%;margin:10px 0 0 -30%;}
+	#adver .search,#adver button{font-size:20px;}
+	#tour .tour h2{font-size:35px;}
+	#headLine hgroup{left:5%;}
+	#headLine hgroup h2{font-size: 30px;}
+	#headLine hgroup h3{font-size: 16px;}
+	#container .sideBar{display: none;}
+	#container .list{width:99%;padding:0 20px;}
+	#container .list h3{font-size: 28px;}
+	#container .about p,#container .about address{font-size:18px;}
+	#container .ticket .form,#container .ticket .button,#container .ticket .form input{width:98%;display: block;}
+	#container .ticket .form input{height:35px;}
+	#container .ticket .form p{line-height:2;}
+	#container .ticket .form input{width:98%;margin:0;}
+	#container .ticket .button .submit{width:30%;height:auto;position:static;margin: 10px auto;line-height:2;font-size:16px;}
+	#container .tour hgroup h3{font-size:22px;}
+	.tour .md-hidden{display: none;}
+	#container .buy{top:auto;right:auto;bottom:0px;left: 45%;margin-left:25px;}
+}
+/*在 480 和 767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header div h1,#footer .sm-hidden,#container .sideBar,.tour .md-hidden{display: none;}
+	#header .navs{width:100%;font-size:14px;}
+	#header,#header div,#header h1,#header .navs,#header .navs li a{height:45px;line-height:45px;}
+	#adver{padding-top:45px;}
+	#adver .searBox{width:70%;margin:0 0 0 -35%;height:53px;line-height:53px;}
+	#adver .search,#adver button{font-size:18px;height:45px;}
+	#footer .version{display: block;}
+	#tour .tour h2{font-size:30px;}
+	#tour .tour p{font-size:15px;}
+	#tour figure{width:49.2%;}
+	#headLine hgroup{left:8%;}
+	#headLine hgroup h2{font-size: 26px;}
+	#headLine hgroup h3{font-size: 14px;}
+	#headLine{padding-top:45px;}
+	#container .list{width:99%;padding:0 20px;}
+	#container .list h3{font-size: 25px;}
+	#container .about p,#container .about address{font-size:15px;}
+	.scenery figure{width:48.2%;}
+	.scenery figcaption{font-size:18px;}
+	#container .ticket .form input{width:99%;margin:0;}
+	#container .ticket .form,#container .ticket .button,#container .ticket .form input{width:98%;display: block;}
+	#container .ticket .form input{height:35px;}
+	#container .ticket .form p{line-height:2;}
+	#container .ticket .form input{width:98%;margin:0;}
+	#container .ticket .button .submit{width:30%;height:auto;position:static;margin: 10px auto;line-height:2;font-size:16px;}
+	#container .ticket .type,#container .ticket .form,#container .ticket .new,#container .ticket table .reserve a,#container .ticket .form input{font-size:16px;}
+	#container .tour hgroup {padding-top:6px;}
+	#container .tour hgroup h3{font-size:20px;}
+	#container .tour hgroup h4{font-size:14px;padding-top:0px;}
+	#container .disc{width:42px;height: 42px;}
+	#container .disc span{font-size:10px;text-indent: 0px;}
+	#container .buy{top:auto;right:auto;bottom:0px;left: 45%;margin-left:25px;}
+	#container .buy .price strong{font-size:20px;}
+}
+/*在小于 480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header div h1,#footer .sm-hidden,#container .sideBar{display: none;}
+	#header .navs{width:100%;}
+	#header{font-size:14px;}
+	#header,#header div,#header h1,#header .navs,#header .navs li a{height:45px;line-height:45px;}
+	#adver{padding-top:45px;}
+	#header .hiddens,#container .disc,.tour .md-hidden{display: none;}
+	#header .navs li{width:25%;}
+	#adver .searBox{width:80%;margin:0 0 0 -40%;height:48px;line-height:48px;}
+	#adver .search,#adver button{font-size:15px;height:40px;}
+	#footer .version{display: block;padding:5px 0;font-size:14px;}
+	#footer .bottom{font-size:12px;padding:10px 0;}
+	#tour .tour h2{font-size:26px;}
+	#tour .tour p{font-size:14px;}
+	#tour figure,#container .list{width:99%;}
+	#headLine{padding-top:45px;}
+	#headLine hgroup{left:8%;}
+	#headLine hgroup h2{font-size: 20px;}
+	#headLine hgroup h3{font-size: 12px;}
+	#container .list{padding:0 20px;}
+	#container .list h3{font-size: 22px;}
+	#container .about p,#container .about address{font-size:14px;}
+	.scenery figure{width:98%;}
+	.scenery figcaption{font-size:16px;}
+	#container .ticket .form input{width:99%;margin:0;}
+	#container .ticket .form,#container .ticket .button,#container .ticket .form input{width:98%;display: block;}
+	#container .ticket .form input{height:35px;}
+	#container .ticket .form p{line-height:2;}
+	#container .ticket .form input{width:98%;margin:0;}
+	#container .ticket .button .submit{width:30%;height:auto;position:static;margin: 10px auto;line-height:2;font-size:16px;}
+	#container .ticket .type,#container .ticket .form,#container .ticket .form input,#container .ticket .new,#container .ticket table .reserve a{font-size:14px;}
+	#container .ticket table .reserve a{display:inline-block;width:auto;height:auto;line-height: 1;padding:8px;}
+	#container .ticket .new .min{display:none;}
+	#container .tour hgroup{overflow: hidden;padding:5px 0px 10px 15px;}
+	#container .tour hgroup h3{font-size:14px;height: 20px;line-height:20px;}
+	#container .tour hgroup h4{font-size:12px;line-height: 1;white-space: nowrap;}
+	#container .buy{top:auto;right:auto;bottom:0px;left: 45%;margin-left:15px;}
+	#container .buy .price strong,#container .buy .price s{font-size:14px;}
+}
